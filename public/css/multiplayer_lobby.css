@@ -1,0 +1,249 @@
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    background: url("/img/bg.jpg");
+    background-repeat: repeat;
+}
+
+.clearFloat{
+    clear: both;
+}
+
+
+
+
+
+/******************************* Profile section ******************************/
+
+.profile-wrapper {
+    margin: 16px auto;
+    padding: 16px;
+    background: white;
+    box-shadow: 0px 0px 8px -0.5px grey;
+    text-align: center;
+    width: 500px;
+}
+
+#profile-username {
+    display: inline;
+
+}
+
+
+
+/**************************** Game request section ****************************/
+
+.gameRequests-wrapper {
+    text-align: center;
+}
+
+.gameRequestsNotification {
+    margin: 16px auto;
+    width: 500px;
+    background: white;
+    box-shadow: 0px 0px 8px -0.5px grey;
+    padding: 8px 16px;
+}
+
+.gameRequestsNotification h1 {
+    font-size: 14pt;
+    margin: 0px;
+}
+
+.gameRequestsNotification p {
+    margin: 8px;
+}
+
+.button_acceptRequest {
+    color: white;
+    background: green;
+    box-shadow: 0px 2px 8px -0px grey;
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px;
+    text-align: center;
+    width: 100px;
+    margin: 8px;
+}
+
+.button_acceptRequest:hover {
+    background: darkgreen;
+    box-shadow: 0px 4px 16px -0px grey;
+}
+
+.button_declineRequest {
+    color: white;
+    background: red;
+    box-shadow: 0px 2px 8px -0px grey;
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px;
+    text-align: center;
+    width: 100px;
+    margin: 8px;
+}
+
+.button_declineRequest:hover {
+    background: darkred;
+    box-shadow: 0px 4px 16px -0px grey;
+}
+
+
+
+/******************************* Online Players *******************************/
+
+.onlinePlayers-wrapper {
+    width: 500px;
+
+    margin: 16px auto;
+    padding: 16px;
+
+    background: white;
+    box-shadow: 0px 0px 8px -0.5px grey;
+}
+
+.onlinePlayers-wrapper h1 {
+    font-size: 16pt;
+}
+
+.onlinePlayers-row {
+    display: block;
+    padding: 8px;
+}
+
+.onlinePlayers-username {
+    display: inline-block;
+    float: left;
+    padding: 8px;
+}
+
+.button_sendRequest {
+    color: white;
+    background: green;
+    box-shadow: 0px 2px 8px -0px grey;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 8px;
+    text-align: center;
+    width: 150px;
+}
+
+.button_sendRequest:hover {
+    background: darkgreen;
+    box-shadow: 0px 4px 16px -0px grey;
+}
+
+/*
+* JavaScript changes to this class after the "Send request" button is clicked.
+*/
+.button_requestSent {
+    background: #FF5722;
+    /*border: 1px solid black;*/
+    color: white;
+    cursor: default;
+    display: inline-block;
+    float: right;
+    padding: 8px;
+    text-align: center;
+    width: 150px;
+}
+
+.button_requestDecliend {
+    background: #607D8B;
+    color: white;
+    display: inline-block;
+    float: right;
+    padding: 8px;
+    text-align: center;
+    width: 150px;
+}
+
+
+
+
+
+/***************** Board Size Notification for Online Players *****************/
+
+.boardSizeNotification-forOnlinePlayers {
+    width: 460px;
+    height: 160px;
+    /*
+    * This height is set under the assumption that username is 32 chars long.
+    * Big username will cause the title to overflow
+    */
+
+    padding: 16px;
+    margin: auto;
+
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
+    background: white;
+    box-shadow: 0px 0px 8px -0.5px grey;
+
+    z-index: 1700;
+}
+
+
+.boardSizeNotification-forOnlinePlayers h1{
+    font-size: 14pt;
+}
+
+.notification_button_general {
+    width: 100px;    
+
+    padding: 16px 16px;
+    margin: 8px;
+
+    background: white;
+    display: inline-block;
+    box-shadow: 0px 0px 8px -0.5px grey;
+
+    text-align: center;
+}
+
+.notification_button_general:hover {
+    box-shadow: 0px 0px 16px -0.5px grey;
+}
+
+.notification_button_general:active {
+    box-shadow: 0px 0px 4px -0.5px grey;
+}
+
+
+
+
+
+/************************* User Offline Notification **************************/
+
+.notification-userOffline {
+    width: 460px;
+    height: 150px;
+    /*
+    * This height is set under the assumption that username is 32 chars long.
+    * Big username will cause the title to overflow
+    */
+
+    padding: 16px;
+    margin: auto;
+
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
+    background: white;
+    box-shadow: 0px 0px 8px -0.5px grey;
+
+    z-index: 1900;
+}
+
+.notification-userOffline h1 {
+    font-size: 14pt;
+}
+

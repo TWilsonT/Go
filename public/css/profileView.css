@@ -1,0 +1,17 @@
+
+body {
+    background-image: url("/img/bg.jpg");
+    background-repeat: repeat;
+}
+
+h2 {
+    text-shadow: .5px .5px #D8D8D8;
+}
+
+
+.material-icons.md-40 {
+  font-size: 40px;
+}
+.material-icons:hover {
+  cursor:pointer;
+}

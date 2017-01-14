@@ -1,0 +1,53 @@
+
+<html>
+
+    <head>
+        <title>Let's GO! Registration Form</title>
+
+        <link rel="stylesheet" href="main2.css">
+
+
+    </head>
+    <body>
+
+        <div id="container">
+            <center>
+				<hr style="height: 5pt; visibility:hidden; margin-bottom:-1px; " />
+                <h3>LET'S REGISTER!</h3>
+                <p style="color:green; margin: 0px; width:222px;" id="reg-status"></p>
+                <hr style="height: 5pt; visibility:hidden; margin-bottom:-1px; " />
+                <div id="title">
+                    <input type="text" class="textbox" id="user-name"  placeholder= "Choose your Username" onkeyup="checkUser(this.value)">
+                    <p style="color:red; margin: 0px; width:222px;" id="user-err"></p>
+                </div>
+                <div>
+                    <hr style="height: 0pt; visibility:hidden; margin-bottom:-1px; " />
+                    <input type="password" class="textbox" id="password" placeholder= "Create a Password" onkeyup="checkPass(this.value)">
+                    <p style="color:red; margin: 0px; width:222px;" id="password-check-err"></p>
+                    <hr style="height: 0pt; visibility:hidden; margin-bottom:-1px; " />
+
+                    <input type="password" class="textbox" id="password-check" placeholder= "Confirm your Password" onkeyup="confirmPass(this.value)">
+                    <p style="color:red; margin: 0px; width:222px;" id="confirm-err"></p>
+                    <hr style="height: 5pt; visibility:hidden; margin-bottom:-1px; " />
+                </div>
+                <div id="title">
+                    <p style="margin: 0px; width:222px; font-size:14pt;">What was the name of your elementary school?</p>
+                    <input type="text" class="textbox" id="security-question" placeholder= "" onkeyup="checkSecurity(this.value)"><br>
+                    <p style="color:red; margin: 0px; width:222px;" id="security-err"></p>
+
+                </div>
+                <hr style="height: 0pt; visibility:hidden; margin-bottom:-1px; " />
+                <button id="Register" class="button button1" onclick="register()">Register</button>
+            </center>
+        </div>
+
+        <script src="dist/form.js" type="text/javascript"></script>
+
+        <!-- <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/NetworkAdapter.js" type="text/javascript"></script>
+        <script src="js/form.js" type="text/javascript"></script> -->
+
+    </body>
+
+</html>

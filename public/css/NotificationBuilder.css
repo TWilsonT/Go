@@ -1,0 +1,126 @@
+
+/*
+* The gray screen that appears between the notification and the page
+*/
+#notification-screenLock {
+    background: gray;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: none;
+    z-index: 1000
+}
+
+
+
+
+
+/************************ Session Expired Notification ************************/
+
+.sessionExpiredNotification {
+
+    width: 500px;
+    height: 180px;
+
+    padding: 16px;
+    margin: auto;
+
+    background: white;
+    box-shadow: 0px 0px 8px -0.5px grey;
+
+
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
+}
+
+.sessionExpiredNotification h1 {
+    font-size: 14pt;
+}
+
+.sessionExpiredNotification-button {
+    width: 200px;
+    margin: 0px auto;
+
+    margin-top: 32px;
+    padding: 12px;
+
+    background: white;
+    box-shadow: 0px 0px 8px -0.5px grey;
+}
+
+.sessionExpiredNotification-button:hover {
+    box-shadow: 0px 0px 16px -0.5px grey;
+}
+
+
+
+
+
+/*********************** Game in Progress Notification  ***********************/
+
+.leftGameInProgressNotification {
+    width: 450px;
+    height: 200px;
+
+    padding: 16px;
+    margin: auto;
+
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+
+    box-shadow: 0px 0px 8px -0.5px grey;
+    background: white;
+
+    z-index: 1910;
+}
+
+.leftGameInProgressNotification h1 {
+    font-size: 14pt;
+}
+
+.leftGameInProgressNotification-button {
+    background: white;
+    text-align: center;
+    width: 150px;    
+    padding: 16px 16px;
+    margin: 8px;
+    /*border: 1pt solid black;*/
+    box-shadow: 0px 0px 8px -0.5px grey;
+    display: inline-block;
+}
+
+.leftGameInProgressNotification-button:hover {
+    box-shadow: 0px 0px 16px -0.5px grey;
+}
+
+.leftGameInProgressNotification-button:active {
+    box-shadow: 0px 0px 4px -0.5px grey;
+}
+
+
+
+
+
+/******************************************************************************/
+.clearFloat{
+    clear: both;
+}
+
+.cancelButton {
+    width: 20px;
+    float: right;
+    cursor: pointer;
+}

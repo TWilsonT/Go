@@ -1,0 +1,81 @@
+body{
+	
+	background: url("http://zirbelstube.net/wp-content/uploads/2014/08/Wood-Brown-Background-HD-Wallpaper.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 0%;
+}
+h3{
+	color: brown;
+	font-family: "Verdana";
+}
+p{
+	text-align: left;
+	height:auto;
+	display: table-cell;
+}
+
+	
+.textbox { 
+    height: 25px; 
+    width: 222px; 
+    background-color: transparent;  
+    border-style: solid;  
+    border-width: 0px 0px 1px 0px;  
+    border-color: black; 
+    outline:0; 
+	font-size: 17px;
+	
+  } 
+
+#container{
+	display:table;
+	background: white;
+	width: 300px;
+	text-align: center;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	box-shadow: 0px 0px 20px #000000;
+	min-height:340px;
+	height:auto;
+
+}
+
+#title{
+	background: #EEEEEE;
+	padding-bottom:8px;
+	padding-top:8px;
+}
+
+
+.button{
+	display:inline-block;
+	margin: 5px;
+	padding: 2px;
+	border: none;
+	box-shadow: 0px 0px 5px #888888;
+	background-color: #03A9F4;
+	color: white;
+	width: 205px;
+	text-align: center;
+	font-size: 16px;
+	padding: 4px 10px 4px;
+	
+}
+
+.textbox:hover {
+
+/* 	width: 270px;
+ */
+	}
+	
+.textbox::after {
+	width: 270px;
+
+}	
+input[type="password"]{
+	-webkit-text-security: disk;
+}
+

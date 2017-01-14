@@ -1,0 +1,44 @@
+.button{
+ 
+	width:  400px;
+    height: 350px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+	
+	
+}
+
+.square{
+	
+	width:30%;
+	float: left;
+	padding-left: 1cm;
+}
+
+h2{
+	top:200px;
+	width:100%;
+	
+}
+
+h2 span{
+	color:black;
+	padding:10px;
+}
+
+#1{
+	
+	
+	position: absolute;
+}
+
+#2{
+	
+	position: absolute;
+}
+
+#3{
+	position: absolute;
+	
+}

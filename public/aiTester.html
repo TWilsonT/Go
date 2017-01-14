@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>AI Tester</title>
+    </head>
+    <body>
+
+        <div id="canvas" style="margin: 0px auto 0px auto;">
+
+        </div>
+
+        <script src="js/utils.js" type="text/javascript"></script>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/svgFactory.js" type="text/javascript"></script>
+        <script src="js/GameController.js" type="text/javascript"></script>
+        <script src="js/NetworkAdapter.js" type="text/javascript"></script>
+        <script src="js/AIGameController.js" type="text/javascript"></script>
+        <script src="js/gameboard.js" type="text/javascript"></script>
+        <script src="js/gamespace.js" type="text/javascript"></script>
+        <script src="js/view.js" type="text/javascript"></script>
+
+        <script>
+
+            // Model - The board
+            var myGameSpace = new GameSpace(9);
+            var player = 1;
+
+            // Controller - Game controller
+            var gameController = new AIGameController();
+
+            // View
+            var view = new View();
+
+            view.setGameSpace(myGameSpace);
+            view.setController(gameController);
+            view.init();
+            view.draw(); // Draws the empty board
+
+            gameController.setGameSpace(myGameSpace);
+            gameController.setView(view);
+
+            $("#canvas").click(function (e) {
+                // Clicked coordinates
+                var x = e.pageX - $(this).offset().left;
+                var y = e.pageY - $(this).offset().top;
+
+                view.onBoardClick(x, y);
+            });
+
+        </script>
+        <button id="Pass" class="button" onclick="gameController.pass()">Pass</button>
+        <button id="Replay" class="button" onclick="gameController.replay()">Show Replay</button>
+
+
+    </body>
+</html>

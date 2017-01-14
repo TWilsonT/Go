@@ -1,0 +1,78 @@
+h1{
+	color: brown;
+	font-family: "Verdana";
+}
+p{
+	height:auto;
+	display: table-cell;
+}
+
+#wrapper{
+	display:table;
+	background: white;
+	width: 260px;
+	height: 280px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 20px;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	box-shadow: 0px 0px 20px #000000;
+	
+	
+}
+body{
+	
+	background: url("http://www.wired.com/wp-content/uploads/2016/01/Go-Board-overhead.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 0%;
+}
+.button{
+	display:inline-block;
+	margin: 5px;
+	padding: 2px;
+	border: none;
+	box-shadow: 0px 0px 5px #888888;
+	background-color: #03A9F4;
+	color: white;
+	width: 205px;
+	text-align: center;
+	font-size: 16px;
+	padding: 4px 10px 4px;
+}
+
+.button:hover {background-color: #0398BD}
+
+.button:active {
+	background-color: #0275A8;
+	box-shadow: 0 1px #666;
+	transform: translateY(1px);
+}
+
+	
+.textbox { 
+    height: 25px; 
+    width: 222px; 
+    background-color: transparent;  
+    border-style: solid;  
+    border-width: 0px 0px 1px 0px;  
+    border-color: black; 
+    outline:0; 
+	font-size:18pt;
+	
+  } 
+  
+  
+a.forget {
+	
+	color: #888888;
+	font-size: 13px;
+	/*padding-right: 5 cm;*/
+}
+
+input[type="password"]{
+	-webkit-text-security: disk;
+}

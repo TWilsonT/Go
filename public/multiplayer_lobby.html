@@ -1,0 +1,53 @@
+<html>
+
+    <head>
+        <title>Multiplayer Lobby</title>
+        <link href="css/multiplayer_lobby.css" rel="stylesheet" type="text/css"/>
+        <link href="css/NotificationBuilder.css" rel="stylesheet" type="text/css"/>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+    </head>
+
+    <body>
+
+        <div id="notificationCenter"></div>
+
+        <!--
+        the gray screen on top of which the notification appears
+        this div also prevents clicks to the body when active
+        -->
+        <div id="notification-screenLock"></div>
+
+        <div id="lobbyBody">
+
+            <!-- Profile section -->
+            <div id="profile-wrapper" class="profile-wrapper">
+                Logged in as: <div id="profile-username"></div>
+            </div>
+
+
+
+            <!-- Game request section -->
+            <div id="gameRequests-wrapper" class="gameRequests-wrapper">
+
+            </div>
+
+
+
+            <!-- Online players' section -->
+            <div id="onlinePlayers-wrapper" class="onlinePlayers-wrapper">
+                <h1>Online Players</h1>
+                <div id="onlinePlayers-list"></div>
+            </div>
+
+        </div>
+
+        <script src="dist/multiplayerlobby.js" type="text/javascript"></script>
+
+        <!-- <script src="js/jquery.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/NetworkAdapter.js" type="text/javascript"></script>
+        <script src="js/NotificationBuilder.js" type="text/javascript"></script>
+        <script src="js/multiplayer_lobby.js" type="text/javascript"></script> -->
+
+    </body>
+</html>

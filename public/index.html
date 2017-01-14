@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Go</title>
+
+        <link rel="stylesheet" href="main1.css">
+    </head>
+    <body>
+        <div id="wrapper">
+
+            <h1>Let's GO!</h1>
+
+            <center>
+                <p style="color:red; margin: 0px; width:222px;" id="login-err"></p>
+                <input type="text" class="textbox" id="user-name"  placeholder= "User Name"><br>
+                <hr style="height: 0pt; visibility:hidden; margin-bottom:-1px; " />
+
+                <input type="password" class="textbox" id="password" placeholder= "Password"><br>
+                <hr style="height: 0pt; visibility:hidden;" />
+
+                <a style="text-decoration: none" class="button button1" onclick="login()">Login</a><br>
+
+                <a href="form.html" style="text-decoration: none" class="button button2" >Register</a><br>
+
+                <a style="text-decoration: none" class="button button3" onclick="quickplay()">Quickplay</a><br>
+
+            </center>
+
+            <div style="text-align: right" >
+                <a href="" style="text-decoration: none" class="forget" >Forgot your password?</a>
+            </div>
+
+            <script src="dist/login.js" type="text/javascript"></script>
+
+            <!-- <script src="js/jquery.min.js" type="text/javascript"></script>
+            <script src="/socket.io/socket.io.js"></script>
+            <script src="js/NetworkAdapter.js" type="text/javascript"></script>
+            <script src="js/index.js" type="text/javascript"></script> -->
+
+        </div>
+    </body>
+
+</html>

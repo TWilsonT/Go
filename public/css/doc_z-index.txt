@@ -1,0 +1,27 @@
+
+================================ Top of the page ===============================
+
+================================= Notifications ================================
+// High priority
+2000    - session expire
+1910    - leftGameInProgressNotification
+1900    - notification-userOffline
+
+// Medium
+1700    - boardSizeNotification-forOnlinePlayers
+1600    - boardSizeNotification-forGameMode
+
+1550    - gameOverNotification
+1500    - game board
+
+// Bottom level
+1000    - #notification-screenLock
+====================================== UI ====================================== 
+
+600     - #settingsBar
+500     - #sideBar
+
+100     - #buttonBarWrapper
+
+0       - (defalut)
+============================== Bottom of the page ==============================

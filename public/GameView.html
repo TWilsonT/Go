@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>Go</title>
+        <link href="css/NotificationBuilder.css" rel="stylesheet" type="text/css"/>
+        <link href="css/buttonBar.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="viewTester.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+        <script src="https://use.fontawesome.com/8e20c928f5.js"></script>
+    </head>
+    <body style="margin:0">
+
+        <div id="notificationCenter"></div>
+
+        <div id="notification-screenLock"></div>
+
+        <div id="bodyWrapper">
+
+            <!--Indicator-->
+            <svg height="200" width="300" id="c2" >
+            <ellipse cx="100" cy="135" rx="100" ry="50" stroke="gray" stroke-width="3" fill="lightgray" />
+            </svg>
+
+            <div class="circle1" id="p2"></div>
+
+            <!--Indicator-->
+            <svg height="200" width="300" id="c1">
+            <ellipse cx="100" cy="135" rx="100" ry="50" stroke="gray" stroke-width="3" fill="lightgray" />
+            </svg>
+
+            <div class ="circle2" id="p1"></div>
+
+            <div >
+                <div id="canvas" style="margin: 0px auto 0px auto;">
+
+                </div>
+                <div id="buttonBarWrapper">
+                    <div id="leftButton"></div>
+                    <div id="middleButton"></div>
+                    <div id="rightButton"></div>
+                </div>
+            </div>
+
+            <div id="sideBar" >
+
+                <div type="text" class="playerid" id="player1" readonly="readonly"></div><br>
+
+                <div type="text" class="playerid" id="player2" readonly="readonly" ></div><br>
+                <div id="settingsBar">
+                    <hr style="height: 0pt; visibility:hidden;" />
+                    <img id="showBar" src="http://evergreenrv.mobi/evergreenrv.com/images/icons/menubar/gear512_108.png"/>
+
+
+                    <table id="colourButtonTable"  style= "visibility:hidden; background-color:transparent; border-style: hidden;">
+                        <tr>
+                            <td class="playerSelectBox"><div class="playerButton" id="playerOne" style="background-image: url(&quot;/img/playerOne.png&quot;)"></div></td>
+                            <td class="playerSelectBox"><div class="playerButton" id="playerTwo" style="background-image: url(&quot;/img/playerTwoFade.png&quot;)"></td>
+                        </tr>
+
+                        <tr>
+                            <td><div class="colourButton" id="colourOne" style="background-image: url(&quot;/img/One.png&quot;); background-color: transparent"></div></td>
+                            <td><div class="colourButton" id="colourTwo"style="background-image: url(&quot;/img/Two.png&quot;); background-color: transparent"></div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="colourButton" id="colourThree" style="background-image: url(&quot;/img/Three.png&quot;); background-color: transparent"></div></td>
+                            <td><div class="colourButton" id="colourFour" style="background-image: url(&quot;/img/Four.png&quot;); background-color: transparent"></div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="colourButton" id="colourFive" style="background-image: url(&quot;/img/Five.png&quot;); background-color: transparent"></div></td>
+                            <td><div class="colourButton" id="colourSix" style="background-image: url(&quot;/img/Six.png&quot;); background-color: transparent"></div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="colourButton" id="colourSeven" style="background-image: url(&quot;/img/Seven.png&quot;); background-color: transparent"></div></td>
+                            <td><div class="colourButton" id="colourEight"style="background-image: url(&quot;/img/Eight.png&quot;); background-color: transparent"></div></td>
+                        </tr>
+
+                    </table><br>
+                    <table id="backgroundTable" style=" height: 20%; visibility:hidden; border-style: hidden;">
+
+                            <div style="visibility:hidden;" id="text" class="backgroundIntro">Select Background</div>
+
+                        <tr>
+                            <td class="backgroundButton"><div id="backOne"></div></td>
+                            <td class="backgroundButton"><div id="backTwo"></div></td>
+                            <td class="backgroundButton"><div id="backThree"></div></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+        <!--<script src="dist/gameview.js" type="text/javascript"></script>-->
+
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/NotificationBuilder.js" type="text/javascript"></script>
+        <script src="js/svgFactory.js" type="text/javascript"></script>
+        <script src="js/GameController.js" type="text/javascript"></script>
+        <script src="js/NetworkAdapter.js" type="text/javascript"></script>
+        <script src="js/GameSocket.js" type="text/javascript"></script>
+        <script src="js/NetworkGameController.js" type="text/javascript"></script>
+        <script src="js/AIGameController.js" type="text/javascript"></script>
+        <script src="js/HotSeatGameController.js" type="text/javascript"></script>
+        <script src="js/gameboard.js" type="text/javascript"></script>
+        <script src="js/gamespace.js" type="text/javascript"></script>
+        <script src="js/view.js" type="text/javascript"></script>
+        <script src="js/GameViewPage.js" type="text/javascript"></script>
+    </body>
+</html>

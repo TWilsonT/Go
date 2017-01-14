@@ -1,0 +1,207 @@
+body{
+    background: url("");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 0%;
+}
+
+#sideBar{
+	background-color: rgba(255, 255, 255, .5);
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    box-shadow: 0px 0px 8px -0.5px #000000;
+    z-index: 500;
+
+}
+/* table.nospacing{
+        border-spacing:0;
+} */
+/* table.nospacing,th,td{
+        padding:0;
+} */
+#settingsBar {
+    height: 80%;
+    width: 75%;
+    z-index: 600;
+    position: absolute;
+    right: 30px;
+    top:140px;
+
+}
+#canvas {
+
+    position: absolute;
+    left: 205px;
+    top:10px;
+
+}
+
+#buttonBarWrapper{ /* todo class duplicate in buttonBar.css */
+    font-size:20pt;
+    position: absolute;
+    left: 260px;
+    top: 625px;
+    height:52px;
+    margin:-1px;
+    z-index:100; // assigned to the same z-index as the one in buttonBar.css
+}
+
+#c2{
+    position: absolute;
+    left: 3px;
+    top:20px;
+    overflow: visible;
+}
+#p2{
+    position: absolute;
+    left: 23px;
+    top:50px;
+}
+#c1{
+    position: absolute;
+    left: 820px;
+    top:390px;
+    overflow: visible;
+}
+#p1{
+    position: absolute;
+    left: 840px;
+    top:420px;
+}
+#showBar {
+
+
+    height: 15%;
+    width: 50%;
+    border-radius: 25px;
+    text-align: center;
+    float:right;
+}
+#leftButton{
+    margin:-1px;
+    border:solid;
+    border-width:1px;
+    cursor:pointer;
+    width:160px;
+}
+#middleButton{
+    margin:-1px;
+    border:solid;
+    border-width:1px;
+    cursor:pointer;
+    width:160px;
+}
+#rightButton{
+    margin:-1px;
+    border:solid;
+    border-width:1px;
+    cursor:pointer;
+    width:160px;
+}
+.playerid { 
+    height: 65px; 
+    width: 100%; 
+    background-color: gray;  
+    outline:0; 
+    font-size:25pt;
+    white-space:nowrap;
+    vertical-align:center;
+
+} 
+
+.circle1{
+    width: 160px;
+    height: 140px;
+    border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    background: url("black-go-bowl.png") no-repeat;
+}
+.circle2{
+    width: 160px;
+    height: 140px;
+    border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    background: url("white-go-bowl.png") no-repeat;
+}
+.bowl{
+
+    width:  150px;
+    height: 131.25px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+
+}
+.colourButton{
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+}
+.playerButton{
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+}
+.backgroundIntro{
+    /* display:table-cell;
+    height:30%;
+    padding-top:0px;
+    padding-bottom:0px;
+    padding-left:10px;
+    white-space: nowrap;
+    text-align:center; */
+    background-color: gray;
+    width: 100%;
+    height: 30%;
+    padding:0px;
+    vertical-align:top;
+    display:table-cell;
+}
+
+table{
+    visibility: visible;
+    border: 1px solid;
+    width: 100%;
+    height: 55%;
+}
+tr{
+    padding: 0px;
+    width: 100%;
+}
+td{
+    padding: 0px;
+    width: 50%;
+}
+
+/*************************** Game Over Notification ***************************/
+.gameOverNotification {
+
+    font-family: 'Roboto', sans-serif;
+
+    width: 450px;
+    height: 140px;
+
+    padding: 16px;
+    margin: auto;
+
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+
+    box-shadow: 0px 0px 8px -0.5px grey;
+    background: white;
+
+    z-index: 1550;
+}
+
+.gameOverNotification h1 {
+    font-size: 14pt;
+}

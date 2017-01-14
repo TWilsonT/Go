@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url("../img/bg.jpg");
+    background-repeat: repeat;
+
+}
+
+img {
+    width: 200px;
+    cursor: pointer;
+}
+
+#bodyWrapper{
+    height: 500px;
+    margin: auto;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.account {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-right: 5px;
+  margin-top: 5px;
+  float: right;
+}
+
+.emphasis-hotSeat {
+    color: #388E3C;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.emphasis-ai {
+    color: #FFA000;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.emphasis-network {
+    // nothing
+}
+
+
+/******************* Board Size Notification for Game Modes *******************/
+
+.boardSizeNotification-forGameMode {
+    width: 460px;
+    height: 180px;
+
+    padding: 16px;
+    margin: auto;
+
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
+    background: white;
+    box-shadow: 0px 0px 8px -0.5px grey;
+
+    z-index: 1600;
+}
+
+.boardSizeNotification-forGameMode h1{
+    font-size: 14pt;
+    color: black;
+}
+
+.notification_button_general {
+    width: 100px;
+
+    padding: 16px 16px;
+    margin: 8px;
+
+    background: white;
+    display: inline-block;
+    box-shadow: 0px 0px 8px -0.5px grey;
+
+    text-align: center;
+}
+
+.notification_button_general:hover {
+    box-shadow: 0px 0px 16px -0.5px grey;
+}
+
+.notification_button_general:active {
+    box-shadow: 0px 0px 4px -0.5px grey;
+}
